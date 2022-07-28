@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        input{
+            
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+
+        input:not(text){
+            outline: 3px solid sandybrown;
+        }
+        
+        input[type="email"] {
+            background-color: blueviolet;
+            color: aquamarine;
+        }
+
+        input[type="text"]{
+            background-color: blue;
+        }
+
+        input:focus{
+            border: 2px black;
+        }
+
+        input:hover{
+            background-color: rgb(31, 199, 25);
+            color: rgb(203, 20, 41);
+        }
+
+        p, section, h3{
+            color: rgb(131, 20, 66);
+        }
+
+        h2:hover {
+            color: azure;
+            
+            
+        }
+
+        section:hover {
+            color: aqua;
+        }
+
+        button{
+            background-color: aquamarine;
+        }
+
+        button:active{
+            opacity: 0,5;
+            background-color: brown;
+        }
+
+        a:visited{
+            color:rgb(181, 24, 24);
+        }
+        a:hover{
+            color:blueviolet;
+        }
+        a:active{
+            color: aqua;
+        }
+
+        div:hover{
+            color: black;
+        }
+
+
+        
+    
+
+    </style>
+</head>
+<body style="background-color: rgb(188, 168, 207);margin: 10px; padding-top: 100px;">
+    
+        <!--first Input: space among inputs-->
+        <!--button: active; does nothing I can see-->
+        <!--fixed bar on top of absolute with z-index-->  
+        <header style=" height: 60px;background-color: rgb(98, 98, 14);position: fixed; top: 0;left: 0;z-index: 10;right: 0;"><h2 style="text-align: center;border: 3px;">~~~~~WELCOME~~~~~</h2></header>
+        <div  style="height: 35px;z-index: 11;position: absolute;"><h2>mmsms</h2></div>
+        <h1 style="color: rgb(31, 23, 150); text-align: center;">Animals Blog !</h1>
+        
+    <p> Here you can see everything you want about your favirote animal</p>
+    <section>Hi I am Mustafa, webside, where we are basiclly talking about your animals</section>
+    <h3 style="color: rgb(32, 123, 22);">My faviorte animals are :</h3>
+    
+    <div>
+        
+        <div style="width: 100px;margin: 0 auto;">
+                <!--Dolphin-->
+            <img src="https://www.georgiaaquarium.org/wp-content/uploads/2018/08/common-bottlenose-dolphin.jpg"; width="100%";height="100%">
+        
+            <h3 style="margin-top:10px; text-align: center;">Dolphin</h3>
+        </div>
+
+        <section  style="margin: 10px;">They are found worldwide, mostly in shallow seas of the continental shelves, and are carnivores, mostly eating fish and squid. Dolphin coloration varies, but they are generally gray in color with darker backs than the rest of their bodies.
+
+        </section>
+        <div style="width: 100px;margin: 0 auto;">
+            <!--Tiger-->
+            <img src="https://www.prowildlife.de/wp-content/uploads/2022/02/tiger-indien.jpg"; width="100%"; height="115px";> <h3 style="margin-top:10px; text-align: center;">Tiger</h3>
+        </div>    
+        <section style="margin-bottom: 10px;">A recent count using IUCN data and national tiger surveys found that at least 3,890 are now likely to exist in the wild—up from an estimated 3,200 in 2010.<em> This number can be attributed to rising tiger populations</em>, improved survey methods, and better protection efforts in some tiger range countries.
+
+        </section>
+            <!--Penguin--> <!--fixing the centering issue-->
+        <div class="hover" style="width: 100px;margin: 0 auto;">
+            <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"; class="center"; width="100%"; height="100px" >
+                <!--every element can change the place diffrently-->
+            <h3 style="margin-top:10px; text-align: center;">Penguin</h3>
+        </div>
+        <section>Penguins are aquatic, flightless birds. They lay eggs, have feathers and yet are powerful swimmers. Emperor penguins can stay underwater up to 30 minutes, in essence flying underwater. They live in the Southern Hemisphere, including Antarctica and New Zealand. LiveScience.com has penguin pictures, feature article and news of the latest penguin discoveries.
+
+        </section>
+    </div>
+        <!--adding extending link-->
+        <p> 
+            <h4 style="color: brown;">Here you can see about</h4> 
+            <a href=".\BlueJay"><h3 style="color: rgb(57, 154, 210);">Blue jay</h3></a>
+        </p>
+        <!--adding another extending lik / <h3></h3>-->
+        <p> 
+            <h4 style="color: brown;">Here you can see about</h4> 
+            <a href=".\Giraffe"><h3 style="color: rgb(138, 72, 18);">Giraffe</h3></a>
+        </p>
+        <!--adding another link / <h3></h3>-->
+        <!--a problem with going to the page-->
+        <div style="margin-top: 0 top;">
+            <nav>
+            <a href=".\OtherPage" style="color: rgb(186, 222, 76);"><h3>My other Page</h3></a>
+    
+            </nav>  
+        </div>
+    <!--links tags-->
+    <!--I gusse the <div> is making no since-->
+    <div style="margin-top: 0 top;">
+        <nav>
+            <a style="width: 80px; margin: 0 auto ;text-decoration: none;"
+            href="./index.html">Home</a>
+            <a style="width: 10px; margin: 0 auto;text-decoration: dotted;"
+            href="./about.html">About Me</a>
+            <a style= "margin: 0 auto;text-decoration: line-through;"
+            href="./blog.html">My Blog</a>
+    
+        </nav>
+    </div>
+    <!--does nothing yet-->
+    <svg height="210" width="400" style="color: black;"> <path d="M898 0 L87 778 L878 Z"/></svg>
+    <!--look the left square 'left'/ top is positioning-->
+    <div>
+        <div style="width: 100px; height:100px; background-color: rgb(60, 65, 209) ;position: absolute; top:300px;left: 90px;"></div>
+        <div style="width: 100px; height:100px; background-color: rgb(60, 65, 209) ;position: absolute; top:520px;left: 40px"></div>
+        <div style="width: 100px; height:100px; background-color: rgb(60, 65, 209) ;position: absolute; top:770px;left: 40px"></div>
+    </div>
+    <!--Inputs List-->
+    <div>
+        <ul>
+            <li><input type="email" placeholder="E-Mail Adrress"/> </li>
+            <li><input type="date" placeholder="Your Birthday" /> </li>
+            <li><input type="text" placeholder="Your name"/> </li>
+            <li><input type="text" placeholder="Your Age"/></li>
+            <li><input type="checkbox" /></li>
+            <li><input type="color" /></li>
+            <li><input type="button" /></li>
+        </ul>
+    </div>
+    
+    <textarea style="margin: 20px;" name="Info Box" placeholder="enter your Infos" cols="30" rows="10"></textarea>
+    <label for="check">
+        almost Done!
+        <input type="checkbox" id="check"/>
+    </label>
+    <button>Click</button>
+
+
+</body>
+</html>
